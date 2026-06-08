@@ -13,3 +13,8 @@ How to use
 3. The workflow will publish the contents of `public/` to the `gh-pages` branch automatically on push to `main`/`master`.
 
 If you prefer GitHub Pages to serve from the `main` branch (root or `/docs`), adjust the workflow or GitHub repository settings accordingly.
+
+Repository settings note:
+
+- Ensure Actions have **Read and write permissions**: Settings → Actions → General → *Workflow permissions* → select **Read and write permissions**, and enable **Allow GitHub Actions to create and approve pull requests** if applicable. This lets the `GITHUB_TOKEN` push the `gh-pages` branch.
+
